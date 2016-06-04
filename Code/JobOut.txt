@@ -1,0 +1,32 @@
+Start schedlue (RR)
+0 getpidsec: Job 1 run 
+1 sec:normal Job 1 suspended 
+1 getpidsec: Job 2 run 
+2 sec:normal Job 2 suspended 
+2 getpidsec: Job 3 run 
+3 sec: PROCESSJob 3 suspended 
+3 sec: Job 1 continued 
+4 sec: Finish! Job 1 terminated 
+4 sec: Job 2 continued 
+5 sec: Finish! Job 2 terminated 
+5 sec: Job 3 continued 
+6 sec: Finish! Job 3 terminated 
+End
+
+
+Start schedlue (RR)
+0 sec: Job 1 run 
+1 sec: Job 1 suspended 
+1 sec: Job 2 run 
+2 sec: Job 2 suspended 
+2 sec: Job 3 run 
+3 sec: Job 3 suspended 
+3 sec: Job 1 continued 
+4 sec: Finish! Job 1 terminated 
+4 sec: Job 2 continued 
+5 sec: Finish! Job 2 terminated 
+5 sec: Job 3 continued 
+6 sec: Finish! Job 3 terminated 
+End
+
+
