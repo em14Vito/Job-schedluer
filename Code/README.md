@@ -9,8 +9,8 @@ Note:<br />
 “./scheduler” is the path to the scheduler program;<br />
 “[input filename]” is the path to the job description file;<br />
 “[policy]” is the scheduling policy which should take the following values:<br />
-* (i) “FCFS” (which means the first come first serve policy);
-* (ii) “RR 2” (which means the round robin policy) and “2” means the time quota is “2”.
+> (i) “FCFS” (which means the first come first serve policy);
+> (ii) “RR 2” (which means the round robin policy) and “2” means the time quota is “2”.
 (Note: don’t type the quotes.)  <br />
 After invoking the scheduler, it creates a set of jobs that are described in “Job.txt”, which will be described in Section 3.3. Then, the jobs will be scheduled to execute according to the given policy.  <br />
 <br />
@@ -18,16 +18,18 @@ After the jobs are terminated, the scheduler should print out the statistic info
 (Note: If file JobOut.txt doesn’t exist, It would be created. Otherwise, data that producing by you repeat execute this program would be append to JobOut.txt)
 3. The job description file is a plain-text file named “Job.txt”, which has the following format:<br />
 Note:<br />
-url
+![image1](https://github.com/em14Vito/Job-schedluer/blob/master/Code/picture/p1.png)
 * There are at most 8 jobs stated in a job description file.
 * One line represents one job, i.e., every job description is separated by one newline character  
-“\n”.* A line of job description must contain three non-empty fields: “Arrival Time”,<br />  
+“\n”.
+* A line of job description must contain three non-empty fields: “Arrival Time”,<br />  
 “Command”, and “Duration”. Every two fields are separated by exactly one tab character.
 * The “Arrival Time” of a job is measured relative to the time that the scheduler starts executing<br />
 and is measured in terms of seconds. The smallest value is 0 and the largest is the<br />  
 maximum value defined as “int MAX=10000” in the your header files.<br />
 - (i) When the scheduler has just been started, the time that is relative to the time that the  
-scheduler starts executing is zero.- (ii) If “Arrival Time” of a job is i, it means the job should start executing i seconds  
+scheduler starts executing is zero.
+- (ii) If “Arrival Time” of a job is i, it means the job should start executing i seconds  
 after the scheduler starts.  
 - (iii) The “Arrival Time” means that the time that the job arrives at the system.
 Whether it should be started or not depends on the scheduling policy.
@@ -39,6 +41,6 @@ Whether it should be started or not depends on the scheduling policy.
         Every two tokens are separated by exactly one space character.
 4. Scheduling policy are FCFS and RR
 5. Suppose the job description file “Job.txt” is  
-[]url
+![image2](https://github.com/em14Vito/Job-schedluer/blob/master/Code/picture/p2.png)
 The following is the example of the scheduling report:  
-url
+![image3](https://github.com/em14Vito/Job-schedluer/blob/master/Code/picture/p3.png)
